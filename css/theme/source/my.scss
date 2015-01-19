@@ -1,0 +1,184 @@
+/**
+ * Testing theme control
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+/* Textbook */
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: bold;
+    font-style: italic;
+
+    src: url('../../lib/font/Textbook/Textbook.Bold.Italic.eot');
+    src: url('../../lib/font/Textbook/Textbook.Bold.Italic.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Bold.Italic.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Bold.Italic.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: bold;
+    font-style: normal;
+
+    src: url('../../lib/font/Textbook/Textbook.Bold.eot');
+    src: url('../../lib/font/Textbook/Textbook.Bold.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Bold.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Bold.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: 800;
+    font-style: italic;
+
+    src: url('../../lib/font/Textbook/Textbook.Bolder.Italic.eot');
+    src: url('../../lib/font/Textbook/Textbook.Bolder.Italic.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Bolder.Italic.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Bolder.Italic.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: 800;
+    font-style: normal;
+
+    src: url('../../lib/font/Textbook/Textbook.Bolder.eot');
+    src: url('../../lib/font/Textbook/Textbook.Bolder.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Bolder.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Bolder.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: normal;
+    font-style: italic;
+
+    src: url('../../lib/font/Textbook/Textbook.Normal.Italic.eot');
+    src: url('../../lib/font/Textbook/Textbook.Normal.Italic.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Normal.Italic.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Normal.Italic.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../../lib/font/Textbook/Textbook.Normal.eot');
+    src: url('../../lib/font/Textbook/Textbook.Normal.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.Normal.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.Normal.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: 200;
+    font-style: italic;
+
+    src: url('../../lib/font/Textbook/Textbook.lighter.Italic.eot');
+    src: url('../../lib/font/Textbook/Textbook.lighter.Italic.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.lighter.Italic.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.lighter.Italic.svg') format('svg');
+}
+@font-face
+{
+    font-family: 'Textbook';
+    font-weight: 200;
+    font-style: normal;
+
+    src: url('../../lib/font/Textbook/Textbook.lighter.eot');
+    src: url('../../lib/font/Textbook/Textbook.lighter.woff') format('woff'),
+    url('../../lib/font/Textbook/Textbook.lighter.ttf') format('truetype'),
+    url('../../lib/font/Textbook/Textbook.lighter.svg') format('svg');
+}
+
+/* Input Mono (only regular) */
+@font-face
+{
+    font-family: 'InputMono';
+
+    src: url('../../lib/font/InputMono/InputMono-Regular.eot');
+    src: url('../../lib/font/InputMono/InputMono-Regular.woff') format('woff'),
+    url('../../lib/font/InputMono/InputMono-Regular.ttf') format('truetype'),
+    url('../../lib/font/InputMono/InputMono-Regular.svg') format('svg');
+}
+
+
+/*League Gothic*/
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../../lib/font/league_gothic-webfont.eot');
+	src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+		 url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+		 url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+// Solarized colors
+$base03:    #002b36;
+$base02:    #000000;
+$base01:    #000000;
+$base00:    #000000;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #ffffff;
+$yellow:    #ffcc00;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Textbook', 'Arial', sans-serif;
+$headingFont: 'Textbook', 'Arial', sans-serif;
+$mainColor: $base00;
+$headingColor: $base01;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingLineHeight: 1em;
+$headingLetterSpacing: 0em;
+$headingFontSize: 20px;
+$backgroundColor: $base3;
+$linkColor: $yellow;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+$headingTextShadow: none;
+
+// Background generator
+// @mixin bodyBackground() {
+// 	@include radial-gradient( rgba($base3,1), rgba(lighten($base3, 20%),1) );
+// }
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Bla-bla-type</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/my.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,8 +42,24 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+                <section>
+					<h1>Установка и работа<br>с HTML-движками презентаций</h1>
+                    <br>
+                    <p>
+                        Ден
+					</p>
+				</section>
+                <section>
+                    <h2>
+                        Ставим Shower и наслаждаемся
+                    </h2>
+                </section>
+
+
+
+
 				<section>
-					<h1>Reveal.js</h1>
+					<h1>Help me help me please</h1>
 					<h3>HTML Presentations Made Easy</h3>
 					<p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
@@ -139,20 +155,17 @@
 
 				<section data-markdown>
 					<script type="text/template">
-						## Markdown support
-
+						## Markdown support or kill me, kill me now
 						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
 					</script>
 				</section>
+
+                <section data-markdown="test.md"
+                         data-separator-vertical="^\n\n"
+                         data-separator="^\n\n\n"
+                         data-separator-notes="^Note:"
+                         data-charset="iso-8859-15">
+                </section>
 
 				<section id="transitions">
 					<h2>Transition Styles</h2>
@@ -371,7 +384,7 @@ function linkify( selector ) {
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
